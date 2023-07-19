@@ -1,0 +1,49 @@
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  integration-tests:
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Install Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16.x
+
+    - name: Set up Go
+      uses: actions/setup-go@v4
+      with:
+        go-version: "1.20"
+
+    - name: Install yamlfmt
+      run: go install github.com/google/yamlfmt/cmd/yamlfmt@latest
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run dummy tests
+      run: xvfb-run -a npm test
+      if: runner.os == 'Linux'
+      continue-on-error: true
+
+    - name: Run tests
+      run: xvfb-run -a npm test
+      if: runner.os == 'Linux'
+
+    - name: Run dummy tests
+      run: npm test
+      if: runner.os != 'Linux'
+      continue-on-error: true
+
+    - name: Run tests
+      run: npm test
+      if: runner.os != 'Linux'
+

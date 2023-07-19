@@ -1,0 +1,5 @@
+node_modules
+.vscode-test/
+/test/suite/testdata/**/*/test.yaml
+.env
+*.vsix

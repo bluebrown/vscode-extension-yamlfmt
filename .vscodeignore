@@ -1,0 +1,13 @@
+.github/**
+.vscode/**
+.vscode-test/**
+test/**
+.env
+.gitignore
+.yamlfmt
+.yarnrc
+MAINTAINER.md
+**/jsconfig.json
+**/*.map
+**/.eslintrc.json
+**/*.sh

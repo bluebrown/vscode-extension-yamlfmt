@@ -1,0 +1,60 @@
+{
+  "name": "yamlfmt",
+  "displayName": "yamlfmt",
+  "description": "Format yaml files with https://github.com/google/yamlfmt",
+  "version": "0.0.0",
+  "author": {
+    "name": "Nico Braun",
+    "email": "rainbowstack@gmail.com",
+    "url": "https://bluebrown.github.io"
+  },
+  "repository": {
+    "url": "https://github.com/bluebrown/vscode-extension-yamlfmt"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "publisher": "bluebrown",
+  "pricing": "Free",
+  "categories": [
+    "Formatters"
+  ],
+  "activationEvents": [
+    "onLanguage:yaml"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": {
+      "properties": {
+        "args": {
+          "description": "Command line arguments, passed to yamlfmt",
+          "type": "list",
+          "default": [],
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint --max-warnings 0 .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js",
+    "package": "node_modules/.bin/vsce package",
+    "publish": "node_modules/.bin/vsce publish",
+    "convco": "docker run -u \"$(id -u):$(id -g)\"  -v \"$PWD:/tmp\" --workdir /tmp --rm convco/convco",
+    "release": "bash ./hack/release.sh"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.4.2",
+    "@types/vscode": "^1.80.0",
+    "@vscode/test-electron": "^2.3.3",
+    "@vscode/vsce": "^2.19.0",
+    "eslint": "^8.45.0",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.6"
+  }
+}
