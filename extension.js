@@ -10,10 +10,10 @@ function activate() {
 
       const config = vscode.workspace.getConfiguration("yamlfmt", workspaceFolder || null);
 
-      const args = config.get("args", []);
+      const args = config.get("args", []).filter(arg => arg !== "-in");
       args.push("-in");
 
-      const result = spawnSync("yamlfmt", Array.from(new Set(args)), {
+      const result = spawnSync("yamlfmt", args, {
         cwd: workspaceFolder ? workspaceFolder.uri.fsPath : dirname(document.uri.fsPath),
         input: document.getText(),
       });
