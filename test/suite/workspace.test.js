@@ -17,7 +17,7 @@ suite("workspace", () => {
     test(tc, async () => {
       const wsf = vscode.workspace.getWorkspaceFolder(vscode.Uri.file(path.join(casesDir, tc)));
       await caseDirTest(wsf.uri.fsPath);
-    })
+    });
   }
 
 });

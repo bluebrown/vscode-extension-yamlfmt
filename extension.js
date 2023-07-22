@@ -20,7 +20,7 @@ function activate() {
 
       if (result.error) {
         console.error(result.error);
-        const prefix = "spawnSync "
+        const prefix = "spawnSync ";
         vscode.window.showErrorMessage(
           result.error.message.startsWith(prefix) ?
             result.error.message.substring(prefix.length) :
@@ -36,7 +36,7 @@ function activate() {
       }
 
       if (result.stdout.length < 1) {
-        console.warn("yamlfmt's stdout buffer is empty")
+        console.warn("yamlfmt's stdout buffer is empty");
         return [];
       }
 
@@ -55,4 +55,4 @@ function deactivate() { }
 module.exports = {
   activate,
   deactivate
-}
+};

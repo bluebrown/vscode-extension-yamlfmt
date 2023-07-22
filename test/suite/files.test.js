@@ -11,14 +11,14 @@ suite("files", () => {
 
   for (const tc of testCases) {
     if (tc === "config-xdg" && platform() === "win32") {
-      window.showInformationMessage("skipping XDG_CONFIG_HOME test due to windows platform!")
+      window.showInformationMessage("skipping XDG_CONFIG_HOME test due to windows platform!");
       continue;
     }
 
     test(tc, async () => {
       const dirPath = path.join(casesDir, tc);
-      await caseDirTest(dirPath)
-    })
+      await caseDirTest(dirPath);
+    });
   }
 
 });
