@@ -25,6 +25,7 @@
   "main": "./extension.js",
   "contributes": {
     "configuration": {
+      "title": "yamlfmt",
       "properties": {
         "args": {
           "description": "Command line arguments, passed to yamlfmt",
