@@ -27,9 +27,10 @@
     "configuration": {
       "title": "yamlfmt",
       "properties": {
-        "args": {
+        "yamlfmt.args": {
+          "scope": "resource",
           "description": "Command line arguments, passed to yamlfmt",
-          "type": "list",
+          "type": "array",
           "default": [],
           "items": {
             "type": "string"

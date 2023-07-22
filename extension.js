@@ -7,10 +7,9 @@ function activate() {
   vscode.languages.registerDocumentFormattingEditProvider("yaml", {
     provideDocumentFormattingEdits(document) {
       const workspaceFolder = vscode.workspace.getWorkspaceFolder(document.uri);
+      const config = vscode.workspace.getConfiguration("", document.uri);
 
-      const config = vscode.workspace.getConfiguration("yamlfmt", workspaceFolder || null);
-
-      const args = config.get("args", []).filter(arg => arg !== "-in");
+      const args = config.get("yamlfmt.args", []).filter(arg => arg !== "-in");
       args.push("-in");
 
       const result = spawnSync("yamlfmt", args, {
