@@ -19,6 +19,9 @@
   "categories": [
     "Formatters"
   ],
+  "keywords": [
+    "multi-root ready"
+  ],
   "activationEvents": [
     "onLanguage:yaml"
   ],
