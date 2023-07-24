@@ -1,5 +1,14 @@
 # Changelog
 
+### [v0.1.2](https://github.com/bluebrown/vscode-extension-yamlfmt/compare/v0.1.1...v0.1.2) (2023-07-24)
+
+#### Fixes
+
+* **settings.json:** scope config contribution to resource and resolve it
+correctly (#7)
+([98238f1](https://github.com/bluebrown/vscode-extension-yamlfmt/commit/98238f14371d0e8dc76b86803f9a635cf7aa3786)),
+closes [#7](https://github.com/bluebrown/vscode-extension-yamlfmt/issues/7)
+
 ### [v0.1.1](https://github.com/bluebrown/vscode-extension-yamlfmt/compare/v0.1.0...v0.1.1) (2023-07-22)
 
 #### Fixes

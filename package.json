@@ -2,7 +2,7 @@
   "name": "yamlfmt",
   "displayName": "yamlfmt",
   "description": "Format yaml files with https://github.com/google/yamlfmt",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": {
     "name": "Nico Braun",
     "email": "rainbowstack@gmail.com",
