@@ -23,7 +23,8 @@
     "multi-root ready"
   ],
   "activationEvents": [
-    "onLanguage:yaml"
+    "onLanguage:yaml",
+    "onLanguage:github-actions-workflow"
   ],
   "main": "./extension.js",
   "contributes": {
