@@ -8,11 +8,7 @@ const projectConfigPath = ".yamlfmt";
 const backupConfigPath = `${projectConfigPath}.bak`;
 
 async function main() {
-  fs.rename(projectConfigPath, backupConfigPath, function (err) {
-    if (err) {
-      throw err;
-    }
-  });
+  fs.renameSync(projectConfigPath, backupConfigPath);
 
   try {
     // The folder containing the Extension Manifest package.json
@@ -35,11 +31,7 @@ async function main() {
     process.exit(1);
   }
 
-  fs.rename(backupConfigPath, projectConfigPath, function (err) {
-    if (err) {
-      throw err;
-    };
-  });
+  fs.renameSync(backupConfigPath, projectConfigPath);
 }
 
 main();
