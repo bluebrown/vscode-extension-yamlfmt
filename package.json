@@ -52,7 +52,7 @@
     "release": "bash ./hack/release.sh"
   },
   "devDependencies": {
-    "@vscode/test-electron": "^2.3.3",
+    "@vscode/test-electron": "^2.3.9",
     "@vscode/vsce": "^2.19.0",
     "eslint": "^8.45.0",
     "mocha": "^10.2.0"
