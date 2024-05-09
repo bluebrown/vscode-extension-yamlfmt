@@ -1,15 +1,9 @@
 const path = require("path");
 const os = require("os");
-const fs = require("fs");
 
 const { runTests } = require("@vscode/test-electron");
 
-const projectConfigPath = ".yamlfmt";
-const backupConfigPath = `${projectConfigPath}.bak`;
-
 async function main() {
-  fs.renameSync(projectConfigPath, backupConfigPath);
-
   try {
     // The folder containing the Extension Manifest package.json
     // Passed to `--extensionDevelopmentPath`
@@ -30,8 +24,6 @@ async function main() {
     console.error("Failed to run tests", err);
     process.exit(1);
   }
-
-  fs.renameSync(backupConfigPath, projectConfigPath);
 }
 
 main();

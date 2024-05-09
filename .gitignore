@@ -3,4 +3,3 @@ node_modules
 /test/suite/testdata/**/*/test.yaml
 .env
 *.vsix
-*.bak
