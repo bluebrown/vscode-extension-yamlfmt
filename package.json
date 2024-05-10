@@ -52,14 +52,9 @@
     "release": "bash ./hack/release.sh"
   },
   "devDependencies": {
-    "@types/glob": "^8.1.0",
-    "@types/mocha": "^10.0.1",
-    "@types/node": "^20.4.2",
-    "@types/vscode": "^1.80.0",
     "@vscode/test-electron": "^2.3.9",
     "@vscode/vsce": "^2.19.0",
     "eslint": "^8.45.0",
-    "mocha": "^10.2.0",
-    "typescript": "^5.1.6"
+    "mocha": "^10.2.0"
   }
 }
