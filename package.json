@@ -44,8 +44,7 @@
     }
   },
   "scripts": {
-    "lint": "eslint --max-warnings 0 .",
-    "pretest": "npm run lint",
+    "lint": "dprint check && deno lint",
     "test": "node ./test/runTest.js",
     "package": "node_modules/.bin/vsce package",
     "publish": "node_modules/.bin/vsce publish",

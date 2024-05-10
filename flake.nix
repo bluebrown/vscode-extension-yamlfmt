@@ -34,6 +34,7 @@
 
               edge-pkgs.nodejs_20
               edge-pkgs.yamlfmt
+              edge-pkgs.deno
               edge-pkgs.dprint
               edge-pkgs.typos
             ];

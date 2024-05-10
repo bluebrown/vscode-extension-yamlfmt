@@ -1,0 +1,9 @@
+{
+  "lint": {
+    "include": ["."],
+    "exclude": ["dist/", "node_modules/", "**/*-lock.json", ".direnv", ".vscode-test"],
+    "rules": {
+      "tags": ["recommended"],
+    },
+  },
+}
