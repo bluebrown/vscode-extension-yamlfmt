@@ -9,5 +9,6 @@ test/**
 CONTRIBUTING.md
 **/jsconfig.json
 **/*.map
-**/.eslintrc.json
+dprint.json
+deno.jsonc
 **/*.sh
