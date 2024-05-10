@@ -30,10 +30,9 @@ function run() {
     } catch (err) {
       reject(err);
     }
-
   });
 }
 
 module.exports = {
-  run
+  run,
 };

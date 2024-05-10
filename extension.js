@@ -4,7 +4,7 @@ const vscode = require("vscode");
 
 const yamlformattedLanguages = [
   "yaml",
-  "github-actions-workflow" // Provided in https://github.com/github/vscode-github-actions
+  "github-actions-workflow", // Provided in https://github.com/github/vscode-github-actions
 ];
 const provider = {
   provideDocumentFormattingEdits(document) {
@@ -23,9 +23,9 @@ const provider = {
       console.error(result.error);
       const prefix = "spawnSync ";
       vscode.window.showErrorMessage(
-        result.error.message.startsWith(prefix) ?
-          result.error.message.substring(prefix.length) :
-          result.error.message
+        result.error.message.startsWith(prefix)
+          ? result.error.message.substring(prefix.length)
+          : result.error.message,
       );
       return [];
     }
@@ -47,7 +47,7 @@ const provider = {
     );
 
     return [vscode.TextEdit.replace(range, result.stdout.toString())];
-  }
+  },
 };
 
 function activate() {
@@ -56,9 +56,9 @@ function activate() {
   }
 }
 
-function deactivate() { }
+function deactivate() {}
 
 module.exports = {
   activate,
-  deactivate
+  deactivate,
 };

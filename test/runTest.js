@@ -19,7 +19,6 @@ async function main() {
       extensionTestsPath,
       launchArgs: ["--user-data-dir", path.join(os.tmpdir(), "yamlfmt-test")],
     });
-
   } catch (err) {
     console.error("Failed to run tests", err);
     process.exit(1);

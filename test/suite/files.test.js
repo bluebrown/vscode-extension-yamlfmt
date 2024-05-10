@@ -4,7 +4,6 @@ const { caseDirTest } = require("./lib");
 const { platform } = require("node:os");
 const { window } = require("vscode");
 
-
 suite("files", () => {
   const casesDir = path.join(__dirname, "testdata", "files");
   const testCases = fs.readdirSync(casesDir).filter(entry => fs.statSync(path.join(casesDir, entry)).isDirectory());
@@ -20,5 +19,4 @@ suite("files", () => {
       await caseDirTest(dirPath);
     });
   }
-
 });
