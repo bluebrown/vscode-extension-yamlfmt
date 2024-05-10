@@ -9,7 +9,11 @@ suite("workspace", () => {
   const testCases = fs.readdirSync(casesDir).filter(entry => fs.statSync(path.join(casesDir, entry)).isDirectory());
 
   before(async () => {
-    vscode.workspace.updateWorkspaceFolders(0, null, ...testCases.map(tc => ({ uri: vscode.Uri.file(path.join(casesDir, tc)) })));
+    vscode.workspace.updateWorkspaceFolders(
+      0,
+      null,
+      ...testCases.map(tc => ({ uri: vscode.Uri.file(path.join(casesDir, tc)) })),
+    );
     await sleep(5000);
   });
 
@@ -19,6 +23,4 @@ suite("workspace", () => {
       await caseDirTest(wsf.uri.fsPath);
     });
   }
-
 });
-

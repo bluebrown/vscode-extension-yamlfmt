@@ -1,0 +1,34 @@
+name: Linters
+on:
+  push:
+    branches: [main]
+    # paths-ignore:
+    #   - 'dist/**'
+    #   - 'pnpm-lock.yaml'
+  pull_request:
+    # paths-ignore:
+    #   - 'dist/**'
+    #   - 'pnpm-lock.yaml'
+jobs:
+  dprint:
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@9bb56186c3b09b4f86b1c65136769dd318469633 # v4.1.2
+      - uses: dprint/check@2f1cf31537886c3bfb05591c031f7744e48ba8a1 # v2.2
+        with:
+          dprint-version: '0.45.1' # selfup { "extract": "\\d[^']+", "replacer": ["dprint", "--version"], "nth": 2 }
+
+  typos:
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@9bb56186c3b09b4f86b1c65136769dd318469633 # v4.1.2
+      # Intentionally point to the latest version, not the version bound by nix.
+      # Because getting commit ref from version string requires network access.
+      - uses: crate-ci/typos@d503507db9c5d116c79135435b149cd0f27d726e # v1.21.0
+        with:
+          files: |
+            .
+            .github
+            .vscode
