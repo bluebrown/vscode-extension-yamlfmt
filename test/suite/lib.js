@@ -11,7 +11,7 @@ const sleep = util.promisify(setTimeout);
  * temporary file and then that temp file is formatted. The formatted files
  * content is compared against the result.yaml file.
  *
- * Depending wether the dir is part of a workspace, the yamlfmt extension might
+ * Depending whether the dir is part of a workspace, the yamlfmt extension might
  * behave differently. For example reading a .yamlfmt or .vscode/settings.json.
  *
  * The env variable XDG_CONFIG_HOME is always set to  dirPath/xdg-config-home.
