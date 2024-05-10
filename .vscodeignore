@@ -6,7 +6,7 @@ test/**
 .gitignore
 .yamlfmt
 .yarnrc
-MAINTAINER.md
+CONTRIBUTING.md
 **/jsconfig.json
 **/*.map
 **/.eslintrc.json
