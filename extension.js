@@ -4,7 +4,8 @@ const vscode = require("vscode");
 
 const yamlformattedLanguages = [
   "yaml",
-  "github-actions-workflow" // Provided in https://github.com/github/vscode-github-actions
+  "github-actions-workflow", // Provided in https://github.com/github/vscode-github-actions
+  "dockercompose", // Provided in https://github.com/Microsoft/vscode-docker
 ];
 const provider = {
   provideDocumentFormattingEdits(document) {
