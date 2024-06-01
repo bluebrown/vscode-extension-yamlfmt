@@ -1,5 +1,13 @@
 # Changelog
 
+### [v0.1.4](https://github.com/bluebrown/vscode-extension-yamlfmt/compare/v0.1.3...v0.1.4) (2024-06-01)
+
+#### Features
+
+* support `dockercompose` language (#25)
+([74e0465](https://github.com/bluebrown/vscode-extension-yamlfmt/commit/74e04656c43147de7ed169335f865a2296195c12)),
+closes [#25](https://github.com/bluebrown/vscode-extension-yamlfmt/issues/25)
+
 ### [v0.1.3](https://github.com/bluebrown/vscode-extension-yamlfmt/compare/v0.1.2...v0.1.3) (2024-05-15)
 
 #### Features
