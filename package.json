@@ -59,7 +59,7 @@
     "@types/node": "^20.12.12",
     "@types/vscode": "^1.89.0",
     "@vscode/test-electron": "^2.3.10",
-    "@vscode/vsce": "^2.26.1",
+    "@vscode/vsce": "^2.27.0",
     "eslint": "^8.45.0",
     "mocha": "^10.4.0",
     "typescript": "^5.4.5"
