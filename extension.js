@@ -6,6 +6,7 @@ const yamlformattedLanguages = [
   "yaml",
   "github-actions-workflow", // Provided in https://github.com/github/vscode-github-actions
   "dockercompose", // Provided in https://github.com/Microsoft/vscode-docker
+  "ansible", // Provided in https://github.com/ansible/vscode-ansible
 ];
 const provider = {
   provideDocumentFormattingEdits(document) {
