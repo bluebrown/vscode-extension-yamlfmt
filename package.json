@@ -25,7 +25,8 @@
   "activationEvents": [
     "onLanguage:yaml",
     "onLanguage:github-actions-workflow",
-    "onLanguage:dockercompose"
+    "onLanguage:dockercompose",
+    "onLanguage:ansible"
   ],
   "main": "./extension.js",
   "contributes": {
