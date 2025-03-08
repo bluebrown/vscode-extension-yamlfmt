@@ -1,5 +1,12 @@
 # Changelog
 
+### [v0.1.5](https://github.com/bluebrown/vscode-extension-yamlfmt/compare/v0.1.4...v0.1.5) (2025-03-08)
+
+#### Fixes
+
+* ignore .vscode-test dir
+([c0a1afe](https://github.com/bluebrown/vscode-extension-yamlfmt/commit/c0a1afea7b44707e96e2458cd418595d003b79db))
+
 ### [v0.1.4](https://github.com/bluebrown/vscode-extension-yamlfmt/compare/v0.1.3...v0.1.4) (2024-06-01)
 
 #### Features
