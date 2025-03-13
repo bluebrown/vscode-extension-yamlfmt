@@ -1,6 +1,6 @@
 # Changelog
 
-### [v0.1.5](https://github.com/bluebrown/vscode-extension-yamlfmt/compare/v0.1.4...v0.1.5) (2025-03-08)
+### [v0.1.5](https://github.com/bluebrown/vscode-extension-yamlfmt/compare/v0.1.4...v0.1.5) (2025-03-13)
 
 #### Fixes
 
