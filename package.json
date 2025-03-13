@@ -12,7 +12,7 @@
     "url": "https://github.com/bluebrown/vscode-extension-yamlfmt"
   },
   "engines": {
-    "vscode": "^1.89.0"
+    "vscode": "^1.97.2"
   },
   "publisher": "bluebrown",
   "pricing": "Free",
