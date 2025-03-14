@@ -1,5 +1,13 @@
 # Changelog
 
+### [v0.1.6](https://github.com/bluebrown/vscode-extension-yamlfmt/compare/v0.1.5...v0.1.6) (2025-03-14)
+
+#### Features
+
+* support `azure-pipelines` language (#82)
+([c861caa](https://github.com/bluebrown/vscode-extension-yamlfmt/commit/c861caa7c4a37d140a47f2aa72f1fa54970a8a71)),
+closes [#82](https://github.com/bluebrown/vscode-extension-yamlfmt/issues/82)
+
 ### [v0.1.5](https://github.com/bluebrown/vscode-extension-yamlfmt/compare/v0.1.4...v0.1.5) (2025-03-13)
 
 #### Fixes
