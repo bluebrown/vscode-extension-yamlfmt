@@ -26,7 +26,8 @@
     "onLanguage:yaml",
     "onLanguage:github-actions-workflow",
     "onLanguage:dockercompose",
-    "onLanguage:ansible"
+    "onLanguage:ansible",
+    "onLanguage:azure-pipelines"
   ],
   "main": "./extension.js",
   "contributes": {
